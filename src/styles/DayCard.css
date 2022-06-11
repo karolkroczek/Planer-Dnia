@@ -1,0 +1,19 @@
+.day-card{
+    border-radius: 5px;
+    border: 1px #cecdcd solid;
+    height: calc(100vh/5);
+    user-select: none;
+    transition: 0.1s;
+    /* width: calc(100vw/7); */
+}
+.day-card:hover{
+    background-color: #61dafb;
+}
+
+.off{
+    background-color: #20232a;
+}
+
+.off:hover{
+    background-color:#20232a;
+}

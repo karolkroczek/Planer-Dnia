@@ -1,0 +1,11 @@
+.week{
+    width: 100vw;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-column-start: 4;
+    gap: 0.1em;
+}
+.week div{
+    margin: auto;
+}

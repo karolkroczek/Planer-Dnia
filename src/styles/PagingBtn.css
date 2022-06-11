@@ -1,0 +1,8 @@
+.forward::before{
+    content: '→';
+}
+.backward::before{
+    width: 250px;
+    height: 10px;
+    content: '←';
+}

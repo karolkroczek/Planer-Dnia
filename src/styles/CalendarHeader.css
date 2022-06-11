@@ -1,0 +1,10 @@
+.calendar-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    column-gap: 1em;
+}
+.calendar-header h1{
+    text-align: center;
+}
