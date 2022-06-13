@@ -1,0 +1,24 @@
+.title{
+    position: relative;
+    transition: 0.4s;
+    text-decoration: line-through;
+    text-decoration-color: transparent;
+}
+
+.task-cointainer{
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.task-cointainer .checkbox{
+    margin: auto;
+    transition: 0.2s;
+}
+.task-cointainer .checkbox:checked + .title{
+    text-decoration-color: #cdcdcd;
+}
+.task-cointainer .checkbox:checked + .title p{
+    color: #cdcdcd;
+}
+
