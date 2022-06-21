@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
+import '../styles/NewTaskInput.css'
 
-function AddNewTask({Tasks,setTasks}) {
+function NewTaskInput({Tasks,setTasks}) {
     const[value,setValue]= useState()
 
     const handleChange = (e) => { 
@@ -13,15 +14,17 @@ function AddNewTask({Tasks,setTasks}) {
             title:value,
             state:false
         }])
+
+        e.target[0].value = '' //chwilowe rozwiazanie
     }
   return (
-    <div>
+    <div className=''>
         <form onSubmit={handleSubmit} method='get'>
-        <input placeholder='nazwa' name='desc' onChange={handleChange}/>       
+        <input className='add-input' placeholder='nazwa' name='desc' onChange={handleChange}/>       
         </form>
 
     </div>
   )
 }
 
-export default AddNewTask
+export default NewTaskInput

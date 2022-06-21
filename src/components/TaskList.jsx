@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import NewTaskInput from './NewTaskInput'
 import Task from './Task'
-import AddNewTask from './AddNewTask'
 
 function TaskList() {
   const [Tasks,setTasks] = useState([
@@ -16,7 +16,7 @@ function TaskList() {
   )
   return (
     <div>
-      <AddNewTask Tasks={Tasks} setTasks={setTasks}/>
+      <NewTaskInput Tasks={Tasks} setTasks={setTasks}/>
     <div>Lista zadań:
       {renderedTasks}
     </div>
