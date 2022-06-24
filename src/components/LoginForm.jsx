@@ -10,9 +10,9 @@ function LoginForm() {
     <div>
         <form className='login-form' method='POST' onSubmit={onSubmitHandle}>
           <p>Login</p>
-          <input className='login' name='login' placeholder='Twój login'/>
+          <input className='login' name='login' placeholder='Login'/>
             <p>Hasło</p>
-          <input className='password' name='password' type='password' placeholder='Twoje hasło'/>
+          <input className='password' name='password' type='password' placeholder='Hasło'/>
             <input className='button' name='submit' type="submit" value={"Zaloguj sie!"} />
         </form>
     </div>

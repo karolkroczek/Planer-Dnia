@@ -2,9 +2,7 @@
     background-color: #282c34;
     color: white;
     box-shadow: -9px 8px 30px -13px #282c34;
-    margin: 1em;
     padding: 1em;
-    border: black 1px solid;
     border-radius: 10px;
     letter-spacing: 1.1px;
     display: grid;
@@ -12,22 +10,26 @@
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(3,0.5fr);
     height: 100%;
+    font-size: 1.2em;
 }
 .login-form .login, .login-form .password{
     display: grid;
     margin: 1em;
     height: 2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: inherit;
 }
 
 .button{
     letter-spacing: 1.1px;
     font-size: 1.2em;
-    width: 33%;
-    margin: auto;
     border: none;
+    border-radius: 5px;
     background-color:   #61dafb;
     cursor: pointer;
     transition:0.5s;
+    margin: 1em;
 }
 .button:hover{
     background-color: #ffffff;

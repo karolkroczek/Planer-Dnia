@@ -27,9 +27,9 @@ const [monthId,setMonthId] = useState(MonthId);
 
 
 return(
-  <div>
-    {/* <Calendar setMonthId={setMonthId} setMonth={setMonth} months={months} year={year} monthId={monthId} month={month} day={day}/> */}
-    <TaskList/>
+  <div className='app'>
+    <Slider Sliders={Sliders}/>
+    <LoginForm/>
   </div>
 )
 }
